@@ -11,8 +11,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var colorView: UIView!
     @IBOutlet weak var redSwitch: UISwitch!
+    @IBOutlet weak var redSlider: UISlider!
     @IBOutlet weak var greenSwitch: UISwitch!
+    @IBOutlet weak var greenSlider: UISlider!
     @IBOutlet weak var blueSwitch: UISwitch!
+    @IBOutlet weak var blueSlider: UISlider!
     
     
     override func viewDidLoad() {

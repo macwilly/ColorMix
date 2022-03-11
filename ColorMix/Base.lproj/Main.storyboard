@@ -59,9 +59,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="blueSlider" destination="y3y-Hl-Kuu" id="7s8-mQ-bq6"/>
                         <outlet property="blueSwitch" destination="aVh-BG-V0m" id="prQ-Og-NR1"/>
                         <outlet property="colorView" destination="hUB-fU-vUF" id="P63-Si-gFB"/>
+                        <outlet property="greenSlider" destination="yv6-Yo-rlA" id="SM6-ix-Yw0"/>
                         <outlet property="greenSwitch" destination="U3Y-qs-uoj" id="Und-JY-iLp"/>
+                        <outlet property="redSlider" destination="PM5-BU-o9A" id="8Ld-SG-K2b"/>
                         <outlet property="redSwitch" destination="jzj-L9-Oqa" id="YEW-GW-jAM"/>
                     </connections>
                 </viewController>
