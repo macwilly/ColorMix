@@ -27,6 +27,9 @@ class ViewController: UIViewController {
         updateColor()
     }
     
+    @IBAction func sliderChanged(_ sender: UISlider) {
+        updateColor()
+    }
     func updateColor() {
         var red: CGFloat = 0
         var green: CGFloat = 0
