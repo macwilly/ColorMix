@@ -17,7 +17,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func switchChange(_ sender: UISwitch) {
-        colorView.backgroundColor = .red
+        if sender.isOn{
+            colorView.backgroundColor = .red
+        } else {
+            colorView.backgroundColor = .black
+        }
     }
     
     
