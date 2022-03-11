@@ -16,6 +16,8 @@ class ViewController: UIViewController {
         colorView.backgroundColor = .black
     }
 
+    @IBAction func switchChange(_ sender: UISwitch) {
+    }
     
     
 }
