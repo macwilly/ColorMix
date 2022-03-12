@@ -17,10 +17,28 @@ class ViewController: UIViewController {
     @IBOutlet weak var blueSwitch: UISwitch!
     @IBOutlet weak var blueSlider: UISlider!
     
+    var sliders: [UISlider] = []
+    var toggleSwitches: [UISwitch] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        addSlidersToArray()
+        addToggleSwitchesToArray()
         updateColor()
+    }
+    
+    
+    fileprivate func addSlidersToArray() {
+        sliders.append(redSlider)
+        sliders.append(greenSlider)
+        sliders.append(blueSlider)
+    }
+    
+    fileprivate func addToggleSwitchesToArray() {
+        toggleSwitches.append(redSwitch)
+        toggleSwitches.append(greenSwitch)
+        toggleSwitches.append(blueSwitch)
     }
 
     @IBAction func switchChange(_ sender: UISwitch) {
@@ -28,6 +46,19 @@ class ViewController: UIViewController {
     }
     
     @IBAction func sliderChanged(_ sender: UISlider) {
+        updateColor()
+    }
+    
+    @IBAction func rest(_ sender: Any) {
+         
+        for slider in sliders {
+            slider.value = 1
+        }
+        
+        for toggleSwitch in toggleSwitches {
+            toggleSwitch.isOn = false
+        }
+         
         updateColor()
     }
     
